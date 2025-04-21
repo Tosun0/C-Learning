@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    int arrSize
+    int arrSize;
     std::cout << "arr size : ";
     std::cin >> arrSize;
     int *list = new int[arrSize];
@@ -15,5 +15,7 @@ int main() {
     }
 
     delete[] list;
+
+    getchar(); getchar();
     return 0;
 }
