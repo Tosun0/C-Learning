@@ -87,4 +87,4 @@ int main() {
     getchar(); getchar();
 }
 
-//133
+//133 ctrl + j
