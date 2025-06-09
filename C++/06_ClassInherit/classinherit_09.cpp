@@ -1,5 +1,7 @@
 #include <iostream>
 
+// 가상 함수와 포인터
+
 class Base{
     std::string s;
 
@@ -15,7 +17,7 @@ class Derived : public Base {
     public:
     Derived() : s("Child"), Base() { std::cout << "Derived Class" << std::endl; }
 
-    void what() override { std::cout << s << std::endl; } // 강제로 Override 진행 (Const가 붙으면 컴파일 에러 뜸뜸)
+    void what() override { std::cout << s << std::endl; } // 강제로 Override 진행 (Const가 붙으면 컴파일 에러 뜸)
     /* void what() const { std::cout << s << std::endl; } */ // const가 붙어 상수함수가 되기 때문에 Override가 일어나지 않음
 };
 

@@ -1,7 +1,7 @@
 #include <iostream>
 
 class BaseTosun {
-    protected:
+    protected: //Private을 상속된 개체만 접근 가능하게
     std::string name;
 
     public :

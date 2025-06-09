@@ -1,5 +1,7 @@
 #include <iostream>
 
+// 가상 함수
+
 class Base {
 
     public:
@@ -30,4 +32,4 @@ int main() {
     pc->what();
 
     getchar(); getchar();
-} // 포인터로로 Virtual 함수를 호출 할 때 부모 클래스인지 자손 클래스인지 확인하고 지가 알아서 호출함함
+} // 포인터로 Virtual 함수를 호출 할 때 부모 클래스인지 자손 클래스인지 확인하고 지가 알아서 호출함
