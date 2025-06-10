@@ -1,7 +1,7 @@
 #include <iostream>
 
 // 순수 가상 함수
-// 추상 클래스스
+// 추상 클래스
 
 class Animal {
     public:
