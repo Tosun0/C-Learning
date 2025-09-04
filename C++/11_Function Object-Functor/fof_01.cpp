@@ -1,13 +1,11 @@
-#include <iostream>
+template <typename Cont, typename Comp>
 
-template <typename T, int num>
-T add_num(T t) {
-    return t + num;
+void bubble_sort(Cont& cont, Comp& comp) {
+    for (int i = 0; i < cont.size(); i++) {
+        for (int j = i + 1; j < cont.size(); j++) {
+            if(!comp(cont[i], cont[j])) {
+                cont.swap(i, j);
+            }
+        }
+    }
 }
-
-int main() {
-    int x = 3;
-    std::cout << "x : " << add_num<int, 5>(x) << std::endl;
-
-    getchar(); getchar();
-} //444
